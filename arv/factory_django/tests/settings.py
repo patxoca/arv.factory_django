@@ -14,6 +14,8 @@ DATABASES = {
 SECRET_KEY = "Tests don't require a really s3cr3t k3y ;)"
 
 INSTALLED_APPS = (
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
     "tests",
 )
 

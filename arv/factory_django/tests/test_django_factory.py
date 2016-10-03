@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 
 from ..django_model_factory import DjangoFactory
-from arv.factory.api import Gen, lazy
+from arv.factory.api import gen
 from tests.models import PersonModel, PetModel
 
 
@@ -18,13 +18,13 @@ class TestDjangoFactory(TestCase):
     def setUp(self):
         class PetFactory(DjangoFactory):
             defaults = {
-                "name": lazy(Gen, ["rocky", "tobby", "bailey", "max"]),
+                "name": gen.lazy(gen.Gen, ["rocky", "tobby", "bailey", "max"]),
             }
             constructor = PetModel
 
         class PersonFactory(DjangoFactory):
             defaults = {
-                "name": lazy(Gen, ["bob", "alice", "ann"]),
+                "name": gen.lazy(gen.Gen, ["bob", "alice", "ann"]),
                 "pet": PetFactory,
             }
             constructor = PersonModel

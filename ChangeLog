@@ -1,0 +1,55 @@
+2016-10-03  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* arv/factory_django/tests/test_fk_factory.py: Add tests for
+	'fk_factory'.
+
+2016-10-03  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* arv/factory_django/api.py,
+	arv/factory_django/django_model_factory.py,
+	arv/factory_django/tests/test_django_factory.py: Define
+	'fk_factory'.
+
+2016-08-21  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* setup.py: Release 0.1.1
+
+2016-08-21  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* arv/factory_django/django_model_factory.py,
+	arv/factory_django/tests/settings.py,
+	arv/factory_django/tests/test_django_factory.py: Solve bug with m2m
+	relations.
+
+2016-08-21  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* setup.py: Release 0.1.0
+
+2016-08-21  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* README.rst: Update 'README.rst'
+
+2016-08-21  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* arv/__init__.py, arv/factory_django/__init__.py,
+	arv/factory_django/api.py,
+	arv/factory_django/django_model_factory.py,
+	arv/factory_django/tests/__init__.py,
+	arv/factory_django/tests/models.py,
+	arv/factory_django/tests/settings.py,
+	arv/factory_django/tests/test_django_factory.py, pytest.ini,
+	setup.py, tox.ini: Move 'DjangoFactory' from 'arv.factory'.  Added a couple of tests. The tests pass with 'py.test' but I'm
+	having a hard time making them work with tox.
+
+2016-08-20  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* .gitignore: Add '*~' to .gitignore.
+
+2016-08-19  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* README.md, README.rst: Rename README.md to README.rst
+
+2016-08-19  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* Initial commit
+

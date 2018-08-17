@@ -2,6 +2,7 @@
 
 # $Id:$
 
+from __future__ import unicode_literals
 
 from django.test import TestCase
 from arv.factory.api import Factory
@@ -34,25 +35,25 @@ class TestFkFactory(TestCase):
 
     def test_returns_something_that_looks_like_a_primary_key(self):
         pkf = fk_factory(self.PetFactory)
-        p_1 = pkf.next()
+        p_1 = next(pkf)
         self.assertIsNotNone(p_1)
         self.assertPetModelExists(p_1)
-        p_2 = pkf.next()
+        p_2 = next(pkf)
         self.assertIsNotNone(p_2)
         self.assertPetModelExists(p_2)
         self.assertNotEqual(p_1, p_2)
 
     def test_uses_factory_class(self):
         pkf = fk_factory(self.PetFactory)
-        self.assertPetModel(pkf.next(), "rocky")
-        self.assertPetModel(pkf.next(), "tobby")
+        self.assertPetModel(next(pkf), "rocky")
+        self.assertPetModel(next(pkf), "tobby")
 
     def test_each_fk_factory_has_its_own_surrogate_factory(self):
         pkf_1 = fk_factory(self.PetFactory)
         pkf_2 = fk_factory(self.PetFactory)
-        p = pkf_1.next()
+        p = next(pkf_1)
         self.assertPetModel(p, "rocky")
-        p = pkf_2.next()
+        p = next(pkf_2)
         self.assertPetModel(p, "rocky")
 
     def test_is_not_safe_in_metafactories(self):

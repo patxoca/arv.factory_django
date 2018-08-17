@@ -2,6 +2,8 @@
 
 # $Id:$
 
+from __future__ import unicode_literals
+
 from django.db import models
 
 
@@ -29,6 +31,7 @@ class PersonModel(models.Model):
 
     pet = models.ForeignKey(
         PetModel,
+        on_delete=models.CASCADE,
         null=False,
         blank=False,
     )

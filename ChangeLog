@@ -1,3 +1,13 @@
+2018-08-17  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* : commit 52288e25cbc8eb74ae971385f7771f2078ce04d4 Author: Alexis
+	Roda <alexis.roda.villalonga@gmail.com> Date:   Fri Aug 17 17:38:50
+	2018 +0200
+
+2016-10-03  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* ChangeLog, setup.py: Release 0.1.2
+
 2016-10-03  Alexis Roda <alexis.roda.villalonga@gmail.com>
 
 	* arv/factory_django/tests/test_fk_factory.py: Add tests for
@@ -47,7 +57,7 @@
 
 2016-08-19  Alexis Roda <alexis.roda.villalonga@gmail.com>
 
-	* README.md, README.rst: Rename README.md to README.rst
+	* README.md => README.rst: Rename README.md to README.rst
 
 2016-08-19  Alexis Roda <alexis.roda.villalonga@gmail.com>
 

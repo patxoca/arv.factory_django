@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
+
 from arv.factory.api import gen
 from arv.factory.api import Factory
 from arv.factory.persistance import PersistanceMixin

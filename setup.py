@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 from setuptools import setup, find_packages
 
 version = "0.1.2"
@@ -11,6 +13,12 @@ setup(
     # http://pypi.python.org/pypi?:action=list_classifiers
     classifiers=[
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: Implementation :: CPython",
     ],
     keywords="",
     author="Alexis Roda",
@@ -26,7 +34,7 @@ setup(
         "arv.factory",
         "django>=1.8",
         # -*- Extra requirements: -*-
-        "six",
+        "future",
     ],
     entry_points={
         # -*- Entry points: -*-

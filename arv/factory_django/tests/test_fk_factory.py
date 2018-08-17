@@ -48,6 +48,13 @@ class TestFkFactory(TestCase):
         self.assertPetModel(next(pkf), "rocky")
         self.assertPetModel(next(pkf), "tobby")
 
+    def test_raisesValueError_if_not_a_DjangoFactory(self):
+        class MyFactory(Factory):
+            pass
+
+        with self.assertRaisesRegexp(TypeError, ""):
+            fk_factory(MyFactory)
+
     def test_each_fk_factory_has_its_own_surrogate_factory(self):
         pkf_1 = fk_factory(self.PetFactory)
         pkf_2 = fk_factory(self.PetFactory)

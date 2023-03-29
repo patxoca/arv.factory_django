@@ -1,3 +1,36 @@
+2023-03-29  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* setup.py: Update supported django version + add django
+	classifiers.
+
+2023-03-29  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* setup.py: Added classifiers for the supported python versions.
+
+2023-03-29  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* tox.ini: Fix dependency problem in tests with python 3.5 and
+	django 1.10.  Latest pytest_django calls the function "setup_test_environment"
+	passing a "debug" argument. In django 1.10 the function
+	"setup_test_environment" does not accept any argument.  Adjust tox.ini to install a suitable version of pytest_django in the
+	testenv py35-django110.
+
+2023-03-29  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* README.rst, setup.py, tox.ini: Drop python 3.4 support.
+
+2023-03-29  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* tox.ini: Update tox's envlist.  Add the missing django and python versions to date.
+
+2020-03-19  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* setup.py, tox.ini: Added support for python 3.7 and 3.8.  Added targets in "tox.ini" and explicit classifiers in "setup.py".
+
+2018-08-17  Alexis Roda <alexis.roda.villalonga@gmail.com>
+
+	* ChangeLog, setup.py: Release 0.1.4
+
 2018-08-17  Alexis Roda <alexis.roda.villalonga@gmail.com>
 
 	* : commit 8683e36ca5ff2704c3b6dd9831607f05e42514dd Author: Alexis

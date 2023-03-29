@@ -8,4 +8,4 @@ This is work in progress.
 The documentation is available at
 http://arvfactory.readthedocs.io/en/latest/.
 
-It works with python 2.7 and should work with 3.3+.
+It works with python 2.7 and should work with 3.5+.

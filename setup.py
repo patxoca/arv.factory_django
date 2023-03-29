@@ -12,6 +12,11 @@ setup(
     # Get more strings from
     # http://pypi.python.org/pypi?:action=list_classifiers
     classifiers=[
+        "Framework :: Django :: 1.10",
+        "Framework :: Django :: 1.11",
+        "Framework :: Django :: 2",
+        "Framework :: Django :: 3",
+        "Framework :: Django :: 4",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.5",
@@ -35,7 +40,7 @@ setup(
     install_requires=[
         "setuptools",
         "arv.factory",
-        "django>=1.8",
+        "django>=1.10",
         # -*- Extra requirements: -*-
         "future",
     ],
